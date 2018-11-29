@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/normal_space"
+    tools:ignore="ContentDescription"
+    tools:context=".activities.SearchActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_songs"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/normal_space"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/recycler_songs">
+
+    <EditText
+        android:id="@+id/edit_text_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search"
+        android:backgroundTint="@color/colorPrimary"
+        android:imeOptions="actionGo"
+        android:layout_toStartOf="@id/image_view_search"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryHint"
+        android:shadowColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/image_view_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_search"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <ImageView
+        android:id="@+id/image_view_grid"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="7dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/ic_grid_black" />
+
+    <ImageView
+        android:id="@+id/image_view_linear"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@id/image_view_grid"
+
+        android:layout_below="@id/image_view_grid"
+        app:srcCompat="@drawable/ic_list_black" />
+    </RelativeLayout>
+
+</RelativeLayout>

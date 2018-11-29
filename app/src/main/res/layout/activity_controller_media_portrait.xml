@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".activities.MusicActivity"
+    tools:ignore="ContentDescription">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parent_image_view_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_top_image_song"
+        app:cardCornerRadius="@dimen/regular_card"
+        app:cardElevation="@dimen/regular_card"
+
+        app:cardUseCompatPadding="true"
+        tools:ignore="HardcodedText,ContentDescription">
+
+
+        <ImageView
+            android:id="@+id/image_view_song"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/image_placeholder" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parent_image_view_song"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/normal_space"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/image_view_previous"
+            android:layout_width="@dimen/button_control_small_portrait"
+            android:layout_height="@dimen/button_control_small_portrait"
+            android:layout_margin="@dimen/normal_space"
+            android:background="@drawable/round_button"
+            app:srcCompat="@drawable/ic_skip_previous_primary" />
+
+
+        <ImageView
+            android:id="@+id/image_view_action"
+            android:layout_width="@dimen/button_control_big_portrait"
+            android:layout_height="@dimen/button_control_big_portrait"
+            android:layout_margin="@dimen/normal_space"
+            android:background="@drawable/round_button"
+            app:srcCompat="@drawable/ic_play_arrow_primary" />
+
+        <ImageView
+            android:id="@+id/image_view_next"
+            android:layout_width="@dimen/button_control_small_portrait"
+            android:layout_height="@dimen/button_control_small_portrait"
+            android:layout_margin="@dimen/normal_space"
+            android:background="@drawable/round_button"
+            app:srcCompat="@drawable/ic_skip_next_primary" />
+    </LinearLayout>
+
+</RelativeLayout>

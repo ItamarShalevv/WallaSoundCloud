@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_height">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_parent_card_view"
+        android:layout_centerVertical="true"
+
+        android:layout_width="@dimen/row_small_image"
+        android:layout_height="@dimen/row_small_image"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="@dimen/regular_card"
+        app:cardElevation="@dimen/small_card"
+        android:layout_margin="@dimen/small_space"
+        app:cardUseCompatPadding="false"
+        app:layout_anchorGravity="center_horizontal"
+        tools:ignore="HardcodedText,ContentDescription">
+
+    <ImageView
+        android:id="@+id/image_view_song"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/text_view_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/small_space"
+        android:layout_toEndOf="@id/main_parent_card_view"
+        android:text="wall to the moon"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/row_text_size" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/normal_space"
+    tools:ignore="ContentDescription,Autofill,TextFields"
+    tools:context=".activities.SearchActivity">
+
+    <EditText
+        android:id="@+id/edit_text_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/button_control_small_land"
+        android:layout_marginBottom="@dimen/small_space"
+        android:hint="@string/search"
+        android:backgroundTint="@color/colorPrimary"
+        android:imeOptions="actionGo"
+        android:layout_toStartOf="@id/image_view_search"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryHint"
+        android:shadowColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_search_song"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:id="@+id/image_view_search"
+        android:layout_width="@dimen/button_control_small_land"
+        android:layout_height="@dimen/button_control_small_land"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_search"
+        android:layout_alignParentEnd="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_songs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/image_view_grid"
+
+        android:layout_below="@id/edit_text_search"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/normal_space"/>
+
+    <ImageView
+        android:id="@+id/image_view_grid"
+        android:layout_width="@dimen/button_control_small_land"
+        android:layout_height="@dimen/button_control_small_land"
+        android:padding="@dimen/small_space"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_grid_black" />
+
+    <ImageView
+        android:id="@+id/image_view_linear"
+        android:layout_width="@dimen/button_control_small_land"
+        android:layout_height="@dimen/button_control_small_land"
+        android:layout_marginEnd="@dimen/small_space"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/image_view_grid"
+        app:srcCompat="@drawable/ic_list_black" />
+
+
+</RelativeLayout>

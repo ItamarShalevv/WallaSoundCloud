@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Walla SoundCloud</string>
+    <string name="search">Search</string>
+    <string name="go">Go</string>
+    <string name="image_song_transition">image_song_transition</string>
+    <string name="request_fail">The request fail, try again</string>
+    <string name="not_found">Not found</string>
+    <string name="text_is_empty">Text is empty</string>
+    <string name="loading">Loading...</string>
+    <string name="error_try_again">Error, try again</string>
+    <string name="internet_not_available">Internet connection not available, connect and try again</string>
+
+</resources>

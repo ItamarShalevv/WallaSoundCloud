@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="row_height">110dp</dimen>
+    <dimen name="row_text_size">18sp</dimen>
+    <dimen name="row_big_image">70dp</dimen>
+    <dimen name="row_small_image">50dp</dimen>
+    <dimen name="small_space">8dp</dimen>
+    <dimen name="row_height_big">130dp</dimen>
+    <dimen name="icon_size">40dp</dimen>
+    <dimen name="normal_space">16dp</dimen>
+    <dimen name="row_height_land">80dp</dimen>
+    <dimen name="regular_card">16dp</dimen>
+    <dimen name="button_control_small_land">50dp</dimen>
+    <dimen name="button_control_big_land">65dp</dimen>
+    <dimen name="button_control_small_portrait">60dp</dimen>
+    <dimen name="button_control_big_portrait">80dp</dimen>
+    <dimen name="space_top_image_song">50dp</dimen>
+    <dimen name="small_card">10dp</dimen>
+    <dimen name="text_size_search_song">22sp</dimen>
+</resources>

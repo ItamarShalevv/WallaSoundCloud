@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_height_big"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_parent_card_view"
+        android:layout_width="@dimen/row_big_image"
+        android:layout_height="@dimen/row_big_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/small_space"
+        android:layout_marginTop="@dimen/normal_space"
+        android:layout_marginBottom="@dimen/small_space"
+        app:cardCornerRadius="@dimen/regular_card"
+
+        app:cardElevation="@dimen/regular_card"
+        app:cardUseCompatPadding="false"
+        app:layout_anchorGravity="center_horizontal"
+        tools:ignore="HardcodedText,ContentDescription">
+
+        <ImageView
+            android:id="@+id/image_view_song"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_view_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_parent_card_view"
+        android:maxLines="1"
+        android:layout_centerHorizontal="true"
+        android:text="wall to the moon"
+
+        android:textSize="@dimen/row_text_size" />
+
+</RelativeLayout>
